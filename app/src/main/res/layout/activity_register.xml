@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/tv_bg_selector"
+        android:text="返回"
+        android:textColor="@drawable/textview_color_selector"
+        android:textSize="18dp" />
+
+
+    <LinearLayout
+        android:id="@+id/ly_rg_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ly_rg_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bt_phoneRegister"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_button"
+            android:text="@string/bt_phoneRegister"
+            android:textColor="@color/color_d81e06"
+            android:textColorHint="@color/colorOther"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/bt_mailRegisterr"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_button"
+            android:text="@string/bt_mailRegister"
+            android:textColor="@color/color_d81e06"
+            android:textColorHint="@color/colorOther"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorView"
+            android:text="@string/tv_agreement"
+            android:textSize="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="@string/tv_login"
+            android:textColor="@color/color_d81e06"
+            android:textSize="14dp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/color_eeeeee" />
+
+        <TextView
+            android:id="@+id/tv_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="@string/tv_about"
+            android:textColor="@color/colorOther"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+</RelativeLayout>

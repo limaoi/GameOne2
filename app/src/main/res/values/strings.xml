@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">菜鸡窝</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string-array name="query_suggestions">
+        <item>Android</item>
+        <item>IOS</item>
+        <item>SCALA</item>
+        <item>Ruby</item>
+        <item>JavaScript</item>
+    </string-array>
+
+    <string name="it_recommend">今日热点</string>
+    <string name="it_home">首页</string>
+    <string name="it_comment">消息</string>
+    <string name="it_circle">鸡圈子</string>
+    <string name="it_video">视频</string>
+    <string name="it_me">我的</string>
+
+    <string name="et_hint">邮箱或手机</string>
+    <string name="et_hint2">密码</string>
+    <string name="et_verification">验证码</string>
+    <string name="et_hintMail">邮箱</string>
+    <string name="et_hintPhone">手机</string>
+    <string name="bt_login">登录</string>
+    <string name="bt_register">注册</string>
+    <string name="tv_fogetPwd">忘记密码</string>
+    <string name="tv_problem">登录问题</string>
+    <string name="tv_about">联系我们</string>
+    <string name="tv_login">立即登录</string>
+    <string name="input_limit_pwd">请输入数字或字母</string>
+    <string name="bt_mailRegister">切换邮箱注册</string>
+    <string name="bt_phoneRegister">切换手机注册</string>
+    <string name="bt_verification">获取验证码</string>
+    <string name="tv_agreement">注册代表您已同意GameOne用户协议</string>
+
+    <string name="bt_logout">退出登录</string>
+    <string name="bt_clear_cache">清除缓存</string>
+    <string name="tv_nickname">昵称</string>
+    <string name="tv_sex">性别</string>
+    <string name="tv_signature">个人签名：</string>
+    <string name="tv_signature2">个人签名</string>
+    <string name="tv_email">邮箱</string>
+    <string name="tv_phone">手机</string>
+    <string name="tv_circle">圈子</string>
+    <string name="tv_cancle">取消</string>
+    <string name="tv_issue">提交</string>
+    <string name="error_gif">error_gif</string>
+    <string name="et_hint3">分享新鲜事..</string>
+    <string name="et_hint4">请输入视频标题..</string>
+    <string name="menu_preview">Gallery</string>
+    <string name="menu_video_select">Video</string>
+</resources>

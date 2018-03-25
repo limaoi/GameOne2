@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <cn.jzvd.JZVideoPlayerStandard
+        android:id="@+id/videoplayer"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleImageView_head_photo"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_account_gray" />
+
+
+        <ImageView
+            android:id="@+id/iv_v"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="28dp"
+            android:src="@mipmap/ic_vimeo2" />
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/circleImageView_head_photo"
+            android:text="Autism"
+            android:textSize="13dp"
+            android:textColor="@color/color_515151" />
+
+
+        <Button
+            android:id="@+id/btn_comment"
+            android:layout_width="43dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/button_bg_comment_selector"
+            android:drawablePadding="0dp"
+            android:text="10"
+            android:textColor="@drawable/textview_color_selector3" />
+
+        <Button
+            android:id="@+id/btn_like"
+            android:layout_width="43dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/button_bg_like_selector"
+            android:drawablePadding="0dp"
+            android:text="10"
+            android:textColor="@drawable/textview_color_selector3" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '26.0.2'
+
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "com.example.limaoi.gameone"
+        minSdkVersion 21
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven { url 'https://maven.google.com' }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.4.0'
+    compile 'com.android.support:design:25.4.0'
+    testCompile 'junit:junit:4.12'
+    compile 'com.ashokvarma.android:bottom-navigation-bar:1.4.3'
+    compile 'com.github.GrenderG:Toasty:1.1'
+    /*compile 'com.android.support:support-v4:25.3.1'*/
+
+    compile 'cn.bmob.android:http-legacy:1.0'
+    //bmob-sdk：Bmob的android sdk包，包含了Bmob的数据存储、文件等服务
+    compile 'cn.bmob.android:bmob-sdk:3.5.5'
+    compile 'cn.bmob.android:bmob-sms:1.0.1'
+
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+
+    //选择器
+    compile('com.github.gzu-liyujiang.AndroidPicker:WheelPicker:1.5.1') {
+        exclude group: 'com.android.support'
+    }
+    compile 'com.alibaba:fastjson:1.1.55.android'
+
+    //glide图片加载库
+    compile 'com.github.bumptech.glide:glide:4.1.1'
+
+    //图片选择器
+    compile 'com.yanzhenjie:album:2.0.0-alpha'
+
+    //下拉加载和加载更多
+    compile 'cn.finalteam.loadingviewfinal:loading-more-view:1.0.1'
+    compile 'cn.finalteam.loadingviewfinal:ultra-pull-to-refresh:1.0.1'
+
+    //九宫格
+    compile 'com.jaeger.ninegridimageview:library:1.0.2'
+
+    //视频播放器
+    compile 'cn.jzvd:jiaozivideoplayer:6.2.3'
+
+    //轮播图
+    compile 'com.youth.banner:banner:1.4.10'
+
+}

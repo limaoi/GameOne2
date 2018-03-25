@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@color/colorWhite">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView_head_photo"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_account_gray" />
+
+    <ImageView
+        android:id="@+id/iv_v"
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="32dp"
+        android:src="@mipmap/ic_vimeo2" />
+
+    <TextView
+        android:id="@+id/tv_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="12dp"
+        android:textSize="12dp"
+        android:layout_toRightOf="@id/circleImageView_head_photo"
+        android:text="Autism"
+        android:textColor="@color/colorBlue2" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_nickname"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/circleImageView_head_photo"
+        android:text="1分钟"
+        android:textColor="@color/colorOther"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/tv_dynamic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/circleImageView_head_photo"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:text="哈哈哈哈哈哈哈哈哈和"
+        android:textColor="@color/colorBlack" />
+
+
+    <com.jaeger.ninegridimageview.NineGridImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ngv_dynamicPicture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_dynamic"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:imgGap="4dp"
+        app:maxSize="9"
+        app:showStyle="grid"
+        app:singleImgSize="120dp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/ngv_dynamicPicture"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_eeeeee" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_comment"
+                android:layout_width="43dp"
+                android:layout_height="20dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/button_bg_comment_selector"
+                android:drawablePadding="0dp"
+                android:text="10"
+                android:textColor="@drawable/textview_color_selector3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_like"
+                android:layout_width="43dp"
+                android:layout_height="20dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/button_bg_like_selector"
+                android:drawablePadding="0dp"
+                android:text="10"
+                android:textColor="@drawable/textview_color_selector3" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

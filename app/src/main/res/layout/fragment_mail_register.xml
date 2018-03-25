@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ly_mail"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_mail"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@null"
+            android:drawableLeft="@mipmap/ic_mail"
+            android:drawablePadding="10dp"
+            android:hint="@string/et_hintMail"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@color/colorOther"
+            android:textColorHint="@color/colorOther"
+            android:textCursorDrawable="@null"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/iv_clean_mail"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ic_clear"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="300dp"
+        android:layout_height="1px"
+        android:layout_gravity="center"
+        android:background="@color/color_eeeeee" />
+
+
+    <TextView
+        android:id="@+id/tv_hintMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_d81e06"
+        android:layout_marginLeft="50dp"
+        android:visibility="gone"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@null"
+            android:drawableLeft="@mipmap/ic_lock_register"
+            android:drawablePadding="10dp"
+            android:hint="@string/et_hint2"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@color/colorOther"
+            android:textColorHint="@color/colorOther"
+            android:textCursorDrawable="@null"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/iv_show_pwd"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:src="@mipmap/pass_gone"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/clean_password"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:src="@mipmap/ic_clear"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="300dp"
+        android:layout_height="1px"
+        android:layout_gravity="center"
+        android:background="@color/color_eeeeee" />
+
+    <TextView
+        android:id="@+id/tv_hintPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_d81e06"
+        android:layout_marginLeft="50dp"
+        android:visibility="gone"/>
+
+
+    <Button
+        android:id="@+id/bt_submit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_fill_button"
+        android:enabled="false"
+        android:text="@string/bt_register"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp" />
+
+
+
+
+
+</LinearLayout>
